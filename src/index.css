@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap);
+
+@font-face {
+  font-family: 'Candara';
+  /* src: url('/fonts/Candara_Bold_Italic.ttf') format('truetype'),
+       url('/fonts/Candara_Bold.ttf') format('truetype'),
+       url('/fonts/Candara_Italic.ttf') format('truetype'), */
+       src: url('/fonts/Candara.ttf') format('truetype');
+  
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* Custom styling for slick dots */
+.slick-dots {
+  bottom: -60px; /* Adjust the space between the slider and the dots */
+}
+
+.slick-dots li {
+  margin: 0 1px; /* Adjust the space between dots */
+}
+
+.slick-dots li button:before {
+  font-size: 9px; /* Adjust dot size */
+  color: #000; /* Customize dot color */
+}
+
+/* Optional: Change dot color when active */
+.slick-dots li.slick-active button:before {
+  color: #333; /* Active dot color */
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
